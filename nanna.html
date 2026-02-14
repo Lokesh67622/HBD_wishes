@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happiest Birthday One</title>
+<link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+
+<figure>
+   <img src="dad1.jpeg">
+<figcaption>You And Ur Dad Has A Great Bond !</figcaption></figure>
+<figure>
+   <img src="dad2.jpeg">
+<figcaption></figcaption></figure>
+<figure>
+   <img src="dad3.jpeg">
+<figcaption></figcaption></figure>
+<figure>
+   <img src="dad4.jpeg">
+<figcaption></figcaption></figure>
+<figure>
+   <img src="dad5.jpeg">
+<figcaption></figcaption></figure>
+<figure>
+   <img src="dad6.jpeg">
+<figcaption>The care Your Father Has On You!</figcaption></figure>
+
+ <!-- Music Controls -->
+    <div class="music-controls" id="music-toggle">
+        <i class="fas fa-volume-mute" id="music-icon"></i>
+    </div>
+
+    <!-- Audio Elements -->
+    
+    <audio id="background-music" autoplay loop>
+        <source src="C:\Users\A\OneDrive\Desktop\wishes\song3.mp3.mpeg" type="audio/mpeg">
+    </audio>
+    <button id="music-btn">🔊</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="C:\Users\A\OneDrive\Desktop\wishes\script.js"></script>
+    
+    <div class="container">
+        <header>
+            <h1>You And Ur Dad❤️</h1>
+        </header>
+
+        <div class="letter-container">
+            <div class="letter" id="typed-text"></div>
+        </div>
+
+        <div class="video-container" id="video-message">
+            <!-- Replace with your video embed code -->
+            <iframe src="about:blank" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="navigation">
+            <a href="javascript:history.back()" class="back-button">
+                <i class="fas fa-arrow-left"></i>Back To Surprise
+            </a>
+        </div>
+        <style>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .letter-container {
+                padding: 20px;
+            }
+
+            .letter {
+                font-size: 1rem;
+            }
+
+            .surprise-button {
+                font-size: 1.2rem;
+                padding: 12px 30px;
+            }
+
+            .floating-element {
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid #6a4c93;
+            color: #6a4c93;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #6a4c93;
+            color: white;
+        }
+    </style>
+<script>
+    // Typewriter effect for letter
+            const letterContent = "Sireesha, you are a good supporter to me.\n\n As i think your father is the good supporter to you.\n\nThe bond between you and your dad is so strong.\n\nUntill you celebrate many birthday i hope your father should be your supporter and stay with you.";
+            
+            new Typed('#typed-text', {
+                strings: [letterContent],
+                typeSpeed: 30,
+                showCursor: true,
+                cursorChar: '|',
+                onComplete: function() {
+                    setTimeout(() => {
+                        document.querySelector('.surprise-button').classList.add('animate__animated', 'animate__pulse', 'animate__infinite');
+                    }, 1000);
+                }
+            });
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happiest Birthday One</title>
+<link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+
+<figure>
+   <img src="gif1.jpeg">
+<figcaption>The Beautifull And Cutest One I Have Ever Seen😅💕</figcaption></figure>
+<figure>
+   <img src="gif2.jpeg">
+<figcaption></figcaption></figure>
+ <!-- Music Controls -->
+    <div class="music-controls" id="music-toggle">
+        <i class="fas fa-volume-mute" id="music-icon"></i>
+    </div>
+
+    <!-- Audio Elements -->
+    
+    <audio id="background-music" autoplay loop>
+        <source src="C:\Users\A\OneDrive\Desktop\wishes\song5.mp3.mpeg" type="audio/mpeg">
+    </audio>
+    <button id="music-btn">🔊</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="C:\Users\A\OneDrive\Desktop\wishes\script.js"></script>
+    
+    <div class="container">
+        <header>
+            <h1>🗣️ :ME</h1>
+        </header>
+
+        <div class="letter-container">
+            <div class="letter" id="typed-text"></div>
+        </div>
+
+        <div class="video-container" id="video-message">
+            <!-- Replace with your video embed code -->
+            <iframe src="about:blank" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="navigation">
+            <a href="C:\Users\A\OneDrive\Desktop\wishes\index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>Byeee🙋‍♂️
+            </a>
+        </div>
+        <style>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .letter-container {
+                padding: 20px;
+            }
+
+            .letter {
+                font-size: 1rem;
+            }
+
+            .surprise-button {
+                font-size: 1.2rem;
+                padding: 12px 30px;
+            }
+
+            .floating-element {
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 2px solid #6a4c93;
+            color: #6a4c93;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #6a4c93;
+            color: white;
+        }
+    </style>
+<script>
+    // Typewriter effect for letter
+            const letterContent = "ఏంటి ఈ అబ్బాయి గిఫ్ట్ అన్నీ చెప్పి ఫోటోలు పెట్టాడు అన్నీ ఆలోచిస్తున్నావ్ గా.\n\n నా ధెంగరా నీకు ఎవ్వడానికీ ఏమి లేదు\n\n ఐనా నేను ఇచ్చిన సరే నువ్వు ఏమి తీసుకోవు గా.\n\n ఐనా నేను నీకు ఇదమ్ అన్నీ చల్లానే ధచ్చ కన్ని ఇచ్చే అవకాశం కూడా లేదు.\n\n అందుకే నీ గుర్తుగా అవ్వి నా కాదే ధాచుకునా.\n\n సార్లే వేడు ఏంటి సోది చెప్తునాడు అనుకుంటునావ్ గా😅.\n\nHappiest Birthday Sireesha, My Dearest One💖.\n\nనువ్వు ఈప్పుడు ఎప్పటికి నాకు ప్రత్యేక వ్యక్తి వే.\n\n నీతో చల్లా చెప్పాలి మాట్లాడాలి అన్నీ ఉండీ కానీ నాకు అవకాశం లేదు.\n\n నువ్వు ఎప్పుడు ఈళ్ళనే హ్యాపీగా ఉండు చాలు ఆరోగ్యం కూడా జాగ్రత్త.\n\n నీ కోసం ఏ కాస్త పడి నిన్న రాత్రి నుంచి చేసాను.\n\n నిను ఇపాటి వరకు ఇబంధి పెట్టి ఉంటె నను క్షమించు\n\n\n\nఇట్లు [ లోకేష్ ]";
+            
+            new Typed('#typed-text', {
+                strings: [letterContent],
+                typeSpeed: 30,
+                showCursor: true,
+                cursorChar: '|',
+                onComplete: function() {
+                    setTimeout(() => {
+                        document.querySelector('.surprise-button').classList.add('animate__animated', 'animate__pulse', 'animate__infinite');
+                    }, 1000);
+                }
+            });
+</script>
+</body>
+</html>
